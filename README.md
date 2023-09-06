@@ -1,27 +1,64 @@
-# CountriesApp
+<img src="https://www.warpdevelopment.com/App_Themes/WarpDevelopment/Images/core/warp-logo-white.svg" width="250">
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.1.
+# Angular Assessment:
 
-## Development server
+Create a UI that lists all of the countries in the world using the following API: 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+https://gitlab.com/restcountries/restcountries
 
-## Code scaffolding
+Any libraries or supporting packages of your choice can be used to complete this assessment.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## The UI must:
 
-## Build
+* Display the countries as a grid, using their flag as the picture with their coat of arms as an icon over their flag.
+* Have filters to filter countries by region.
+* Have a search to search for a country by common name or FIFA code.
+* Have a way to select multiple countries then add them to a favourites list.
+* Supply the user with a notification when things happen.	
+* Favourites must be saved in local storage, using a service that acts as your post endpoint, so that they are not lost when reloading the page.
+* The user must be able to click on a country flag that brings up a modal that:
+  * Contains basic information about the country such as:
+    * Common Name.
+    * Region.
+    * Fifa code.
+    * Population (formatted with thousand separators)
+    * Languages.
+    * Country local time and time zone.
+    * Capital city.
+    * A list of their currencies.
+    * A link to view on map (either Google or OpenStreetMaps)   
+  * Have favourite/Unfavourite.
+  * Have a close button.
+* Have a way to access your favourites page.
+  * The favourites page must:
+    * Have a list of all my favourite countries.
+    * Have a way to unfavourite a country.
+    * Have a way to view the details of a country when I click on it using a sub route.
+      * The details page must:
+        * Have all the same details as the modal on the listing page.
+        * A form that:
+          * allows the user to make a comment about the country (saved in local storage against that country)
+          * allows the user to optionally add a picture to a comment using a Google images URL.
+          * automatically sets the time stamp on each comment formatted as: Thurs, 01 April 2023 10:36AM	
+        
+## Criteria
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+The developer will be critiqued on:
 
-## Running unit tests
+* Their ability to understand and use the API.
+* Interpretation of the given brief.
+* Implementation of typed requests and responses.
+* Re-usability of their components and code.
+* House keeping of the project. Modules, components and styling.
+* Use of local storage to persist state.
+* Use of services and observables.
+* Their commit history.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Bonus
 
-## Running end-to-end tests
+* Lazy load the main modules of the project.
+* Styling
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Git
+		
+Final assessment has to be committed to the developers own GitHub repo, with the url to the repo included in their final email.
