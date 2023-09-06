@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./nav.component.scss']
 })
 export class NavComponent {
-
+  showMenu = false;
+  toggleNavbar(){
+    this.showMenu = !this.showMenu;
+  }
 }

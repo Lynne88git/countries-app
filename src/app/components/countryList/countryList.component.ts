@@ -13,6 +13,7 @@ export class CountryListComponent implements OnInit {
 
   ngOnInit(): void {
     this.countryService.getAllCountries().subscribe((data) => {
+      console.log(data); 
       this.countries = data;
     });
   }

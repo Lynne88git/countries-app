@@ -6,18 +6,18 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class CountryService {
-  private apiUrl = 'https://restcountries.com/v3.1/all'; // Replace with the actual API URL
+  private apiUrl = 'https://restcountries.com/v3.1/all'; 
 
   constructor(private http: HttpClient) {}
 
-  // Method to fetch a list of countries
+  // Fetch a list of countries
   getAllCountries(): Observable<any> {
     return this.http.get(this.apiUrl);
   }
 
-  // Method to fetch detailed information about a specific country by FIFA code
+  // Fetch detailed information about a specific country by FIFA code
   getCountryByFifaCode(fifaCode: string): Observable<any> {
-    const countryUrl = `https://restcountries.com/v3.1/alpha/${fifaCode}`; // Adjust the API URL
+    const countryUrl = `https://restcountries.com/v3.1/alpha/${fifaCode}`; 
     return this.http.get(countryUrl);
   }
 }
