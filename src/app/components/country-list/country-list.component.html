@@ -1,7 +1,7 @@
-<div class="min-h-screen flex justify-center items-center">
+<div class="flex justify-center items-center">
     <div class="p-6 rounded-lg shadow-lg">
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            <div *ngFor="let country of countries" class="p-6 rounded-lg shadow-lg rounded shadow-md">
+            <div *ngFor="let country of countries" class="p-6 rounded-lg shadow-lg rounded shadow-md" >
               <!-- Individual country card -->
               <div class="relative">
                 <!-- Flag with coat of arms -->
@@ -12,7 +12,5 @@
               <h2 class="text-lg font-semibold">{{ country.name.common }}</h2>
             </div>
           </div>
-          
     </div>
   </div>
-  
